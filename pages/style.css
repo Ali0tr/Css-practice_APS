@@ -1,0 +1,132 @@
+:root {
+    --black: #000;
+    --primary-color: #f5f5f5;
+    --shadow: #a7a7a7;
+    --star: #ffd700;
+    --heart: #FF0063;
+    --bg-footer: #727272;
+    --white: #fff;
+    --button: #d61a1a;
+}
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url(../assets/font/Shabnam.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shabnam' !important;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 200vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container-fluid {
+    padding: 0;
+}
+
+.header--container {
+    background-color: var(--primary-color);
+}
+
+.main--header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.main--header .icons--header a {
+    color: var(--bg-footer);
+}
+
+.main--header .login--header a {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    color: var(--black);
+    transition: all .3s;
+}
+
+.main--header .login--header a:hover {
+    background-color: var(--bg-footer);
+    border-color: var(--bg-footer);
+    color: var(--white);
+}
+.card--container .card header > div > a{
+    color: var(--white);
+}
+.card--container .card header .stars .fa-star{
+    color: var(--star);
+}
+.off{
+    color: var(--bg-footer) !important;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.card {
+    gap: 10px;
+}
+
+.card .main--card {
+    gap: 10px;
+}
+
+.cards .card--container h3 {
+    font-size: 1.3rem;
+}
+
+.card .main--card img {
+    height: 270px;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+.card .main--card .price span{
+    width: 40px;
+    height: 40px;
+    background: var(--heart);
+    border-radius: 40px;
+    color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.card .main--card .price span:hover{
+    width: 85px;
+}
+.card .main--card .price span:hover > p{
+    display: inline !important;
+    margin: 0;
+}
+.card .main--card .price div{
+    gap: 2rem;
+}
+.card .main--card .price p{
+    margin: 0;
+}
+footer{
+    background-color: var(--bg-footer);
+    color: var(--white);
+}
+footer .social span i{
+    font-size: 1.4rem;
+}
+section.social span{
+    gap: 2rem;
+}
+section.social span i{
+    cursor: pointer;
+}
